@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+.encabezado {
+    padding:20px 40px;
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+}
+
+.menu_item a {
+    color: white;
+    text-decoration: none;
+}
+
+/* SECCION PRONCIPAL */
+
+.seccionPrincipal {
+    background-image: url("../img/fondo.jpeg");
+    background-size: cover;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccionPrincipal h2 {
+    color: white;
+    background-color: gray;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* DESTINOS */
+
+.destinos {
+    padding: 100px;
+}
+
+.destinos h2 {
+    margin.bottom: 40px;
+    text-align: center;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 40px;
+}
+
+.tarjeta {
+    position: relative;
+    
+}
+
+.tarjeta_imagen {
+    width: 100%;
+}
+
+.tarjeta_titulo {
+    position: absolute;
+    bottom: 30px;
+    left: 45%;
+
+    color: white;
+    background-color: gray;
+    border-radius: 20px;
+}
+
+/*PAQUETES*/
+
+.paquetes {
+    background-image: url("../img/paq.jpeg");
+    background-size: cover;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+         ".texto";
+}
+
+.paquetes_texto {
+    color: white;
+    background-color: black;
+    padding: 60px;
+
+}
+
+.borde {
+    border-bottom: 3px solid white;
+    margin-bottom: 30px;
+    padding-bottom: 30px; 
+}
+
